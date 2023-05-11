@@ -16,9 +16,10 @@ export default function Head ({ store }) {
       <style>
         body {
           width: 40vw;
-          font-family: system-ui, sans-serif;
           margin: 0 auto;
           padding: 0;
+          font-family: system-ui, sans-serif;
+          font-size: 18px;
         }
         button {
           border: none;
