@@ -1,0 +1,41 @@
+<style>
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main aside {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>
+
+<header>
+  <h1>Page Likes Tally</h1>
+</header>
+
+<main>
+  <article>
+    <h2>Click the heart to like this page.</h2>
+    <ul>
+      <li>Clicking the heart increments the tally.</li>
+      <li>Clicking the heart again decrements the tally.</li>
+      <li>The tally is stored in a database.</li>
+      <li>The tally is global to all visitors.</li>
+      <li>You can only add one like per session <small>(tracked with a cookie)</small>.</li>
+      <li><reset-button></reset-button> the session to be able to like more than once.</li>
+    </ul>
+    <h2>Powered by</h2>
+    <p>This demo is built with <a href="https://enhance.dev" target="_blank">Enhance</a> and uses <a href="https://www.npmjs.com/package/@begin/data" target="_blank">@begin/data</a> to connect to AWS DynamoDB with a dev-friendly API.</p>
+    <p>Whether running Enhance locally, on Begin.com, or deployed to your own AWS account, the data layer is automatically available.</p>
+    <a href="https://github.com/tbeseda/enhance-example-likes" target="_blank">source code</a>
+  </article>
+
+  <aside>
+    <like-button></like-button>
+    <reset-button size="small"></reset-button>
+  </aside>
+</main>
